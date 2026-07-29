@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suppliers</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Supplier Management</h1>
+
+<nav>
+
+<a href="index.html">Dashboard</a>
+<a href="products.html">Products</a>
+<a href="categories.html">Categories</a>
+<a href="suppliers.html">Suppliers</a>
+<a href="reports.html">Reports</a>
+
+</nav>
+
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<button onclick="logout()">🚪 Logout</button>
+
+</header>
+
+<div class="table-container">
+
+<h2>Add Supplier</h2>
+
+<input type="text" id="supplierName" placeholder="Supplier Name">
+
+<input type="text" id="supplierPhone" placeholder="Phone Number">
+
+<input type="email" id="supplierEmail" placeholder="Email">
+
+<input type="text" id="supplierAddress" placeholder="Address">
+
+<button onclick="addSupplier()">Add Supplier</button>
+
+<h2>Supplier List</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Address</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="supplierTable"></tbody>
+
+</table>
+
+</div>
+
+<script src="suppliers.js"></script>
+
+</body>
+</html>

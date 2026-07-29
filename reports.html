@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Inventory Reports</h1>
+
+<nav>
+
+<a href="index.html">Dashboard</a>
+<a href="products.html">Products</a>
+<a href="categories.html">Categories</a>
+<a href="suppliers.html">Suppliers</a>
+<a href="reports.html">Reports</a>
+
+</nav>
+
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<button onclick="logout()">🚪 Logout</button>
+
+</header>
+
+<div class="table-container">
+
+<h2>Inventory Summary</h2>
+
+<div id="summary"></div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Category</th>
+
+<th>Price</th>
+
+<th>Stock</th>
+
+<th>Total Value</th>
+
+</tr>
+
+</thead>
+
+<tbody id="reportTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="reports.js"></script>
+
+</body>
+
+</html>

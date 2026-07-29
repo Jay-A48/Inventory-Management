@@ -1,0 +1,142 @@
+body{
+
+margin:10;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100vh;
+
+background:#2c3e50;
+
+font-family:Arial;
+
+}
+
+.login-box{
+
+background:white;
+
+padding:40px;
+
+width:350px;
+
+border-radius:10px;
+
+box-shadow:0 0 20px rgba(0,0,0,.3);
+
+text-align:center;
+
+}
+
+
+.login-box h1{
+
+margin-bottom:20px;
+
+color:#2c3e50;
+
+}
+
+.login-box input{
+
+width:100%;
+
+padding:12px;
+
+margin:10px 0;
+
+border:1px solid #ccc;
+
+border-radius:5px;
+
+box-sizing:border-box;
+
+}
+
+.login-box button{
+
+width:100%;
+
+padding:12px;
+
+margin-top:12px;
+
+background:#3498db;
+
+color:white;
+
+border:none;
+
+border-radius:5px;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+.login-box button:hover{
+
+background:#2980b9;
+
+}
+
+#message{
+
+margin-top:15px;
+
+color:red;
+
+}
+
+/* Dark Mode */
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark header{
+background:#000;
+}
+
+.dark .card{
+background:#1e1e1e;
+color:white;
+}
+
+.dark table{
+background:#1e1e1e;
+color:white;
+}
+
+.dark th{
+background:#444;
+}
+
+.dark td{
+border-color:#555;
+}
+
+.dark input{
+background:#2b2b2b;
+color:white;
+border:1px solid #555;
+}
+
+.dark button{
+background:#444;
+color:white;
+}
+
+.dark button:hover{
+background:#666;
+}
+
+.btn-space{
+margin-top:15px;
+}

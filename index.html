@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inventory Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<script>
+if(localStorage.getItem("loggedIn") !== "true"){
+    window.location.href = "login.html";
+}
+</script>
+
+<header>
+
+<h1>Inventory Management System</h1>
+
+<h3 id="welcomeUser"></h3>
+
+<nav>
+
+<a href="index.html">Dashboard</a>
+
+<a href="products.html">Products</a>
+
+<a href="categories.html">Categories</a>
+
+<a href="suppliers.html">Suppliers</a>
+
+<a href="reports.html">Reports</a>
+
+</nav>
+
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<button onclick="logout()">🚪 Logout</button>
+
+</header>
+
+<!-- Dashboard Cards -->
+
+<div class="container">
+
+<div class="card">
+
+<h2>Total Products</h2>
+
+<h1 id="totalProducts">0</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Low Stock</h2>
+
+<h1 id="lowStock">0</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Out of Stock</h2>
+
+<h1 id="outStock">0</h1>
+
+</div>
+
+</div>
+
+<!-- Recent Products -->
+
+<div class="table-container">
+
+<h2>Recent Products</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Category</th>
+<th>Price</th>
+<th>Stock</th>
+
+</tr>
+
+</thead>
+
+<tbody id="recentProducts">
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Low Stock Products -->
+
+<div class="table-container">
+
+<h2>⚠ Low Stock Products (20 and below)</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+<th>Category</th>
+<th>Stock</th>
+
+</tr>
+
+</thead>
+
+<tbody id="lowStockList">
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Out of Stock Products -->
+
+<div class="table-container">
+
+<h2>❌ Out of Stock Products</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+<th>Category</th>
+<th>Price</th>
+
+</tr>
+
+</thead>
+
+<tbody id="outStockList">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

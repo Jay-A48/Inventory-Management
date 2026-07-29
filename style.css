@@ -1,0 +1,308 @@
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+table{
+    width:100%;
+    overflow-x:auto;
+    display:block;
+}
+
+@media (max-width:1024px){
+
+    .container{
+        gap:15px;
+    }
+
+    .card{
+        min-width:45%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header{
+        text-align:center;
+        padding:15px;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        margin-top:15px;
+    }
+
+    nav a{
+        margin:0;
+        display:block;
+    }
+
+    .container{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .card{
+        width:100%;
+        min-width:100%;
+    }
+
+    .table-container{
+        overflow-x:auto;
+        padding:15px;
+    }
+
+    table{
+        min-width:650px;
+    }
+
+    input{
+        width:100%;
+        margin:8px 0;
+    }
+
+    button{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .editBtn,
+    .deleteBtn{
+        width:auto;
+        padding:8px 14px;
+        margin:5px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    header h1{
+        font-size:24px;
+    }
+
+    .card h1{
+        font-size:32px;
+    }
+
+    .card h2{
+        font-size:18px;
+    }
+
+    table th,
+    table td{
+        padding:10px;
+        font-size:14px;
+    }
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+
+header{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00d9ff;
+}
+
+/* Dashboard Cards */
+
+.container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    flex:1;
+    min-width:220px;
+    text-align:center;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card h1{
+    font-size:40px;
+    color:#3498db;
+}
+
+/* Tables */
+
+.table-container{
+    padding:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th{
+    background:#3498db;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+tr:hover{
+    background:#f0f0f0;
+}
+
+/* Inputs */
+
+input{
+    padding:10px;
+    margin:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* General Buttons */
+
+button{
+    padding:10px 20px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2980b9;
+}
+
+/* Product Action Buttons */
+
+.editBtn,
+.deleteBtn{
+    padding:10px 12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    color:white;
+}
+
+.editBtn{
+    background:#f39c12;
+    margin-right:8px;
+}
+
+.editBtn:hover{
+    background:#d68910;
+}
+
+.deleteBtn{
+    background:#e74c3c
+    margin-right:8px;
+}
+
+.deleteBtn:hover{
+    background:#c0392b;
+}
+
+/* Dark Mode */
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark header{
+    background:#000;
+}
+
+.dark .card{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark table{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark th{
+    background:#444;
+}
+
+.dark td{
+    border-color:#555;
+}
+
+.dark input{
+    background:#2b2b2b;
+    color:white;
+    border:1px solid #555;
+}
+
+.dark button{
+    background:#444;
+}
+
+.dark button:hover{
+    background:#666;
+}
+
+.dark .editBtn{
+    background:#b9770e;
+}
+
+.dark .editBtn:hover{
+    background:#9c640c;
+}
+
+.dark .deleteBtn{
+    background:#922b21;
+}
+
+.dark .deleteBtn:hover{
+    background:#641e16;
+}

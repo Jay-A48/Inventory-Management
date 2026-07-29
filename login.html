@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>Inventory Management</h1>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<label>
+<input type="checkbox" onclick="showPassword()">
+Show Password
+</label>
+
+<br><br>
+
+<button onclick="login()">Login</button>
+
+<button onclick="changeCredentials()">Change Username & Password</button>
+
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<p id="message"></p>
+
+</div>
+
+<script src="login.js"></script>
+
+<script>
+history.pushState(null,null,location.href);
+
+window.onpopstate=function(){
+history.go(1);
+}
+</script>
+
+<script>
+localStorage.removeItem("loggedIn");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Categories</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Category Management</h1>
+
+<nav>
+
+<a href="index.html">Dashboard</a>
+
+<a href="products.html">Products</a>
+
+<a href="categories.html">Categories</a>
+
+<a href="suppliers.html">Suppliers</a>
+
+<a href="reports.html">Reports</a>
+
+</nav>
+
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<button onclick="logout()">🚪 Logout</button>
+
+</header>
+
+<div class="table-container">
+
+<h2>Add Category</h2>
+
+<input type="text" id="categoryName" placeholder="Category Name">
+
+<button onclick="addCategory()">Add Category</button>
+
+<h2>Category List</h2>
+
+<table>
+
+<thead>
+
+<tr>
+    <th>Category</th>
+    <th>Products</th>
+    <th>Action</th>
+</tr>
+
+</thead>
+
+<tbody id="categoryTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="categories.js"></script>
+
+</body>
+
+</html>
